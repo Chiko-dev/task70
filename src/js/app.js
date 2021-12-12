@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     expandImage(){
-      this.profile.addEventListener("mouseover", () => {
+      this.profile.addEventListener("click", () => {
         this.profile.classList.toggle("active");
       });
     }
