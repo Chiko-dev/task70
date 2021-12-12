@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
   class Profile {
     constructor(holder){
       this.profile = holder.querySelector(selectors.profile);
-      this.profileImageHolder = holder.querySelector(selectors.profileImageHolder);
+      this.profileImageHolder = document.querySelector(selectors.profileImageHolder);
 
       this.init();
     }
@@ -22,6 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
     expandImage(){
       this.profile.addEventListener("click", () => {
         this.profile.classList.toggle("active");
+        this.profileImageHolder.style.transform = 'scale(2,2)';
       });
     }
 
