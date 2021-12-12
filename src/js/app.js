@@ -1,7 +1,40 @@
-import "../scss/app.scss";
-
 window.addEventListener("DOMContentLoaded", () => {
   // This block will be executed once the page is loaded and ready
+
+  const selectors = { 
+    profile: ".profile",
+    profileImageHolder: ".image"
+  }
+
+  class Profile {
+    constructor(holder){
+      this.profile = holder.querySelector(selectors.profile);
+      this.profileImageHolder = holder.querySelector(selectors.profileImageHolder);
+
+      this.init();
+    }
+
+    init(){
+      this.expandImage();
+      this.shringImage();
+    }
+
+    expandImage(){
+      this.profile.addEventListener("mouseover", () => {
+        this.profile.classList.toggle("active");
+      });
+    }
+
+    shringImage(){
+      this.profile.addEventListener("mouseout", () => {
+        this.profile.classList.toggle("active");
+      });
+    }
+  }
+
+  document.querySelectorAll(selectors.profileImageHolder).forEach(holder =>{
+    new Profile(holder);
+  });
 
   const button = document.querySelector(".button");
   button.addEventListener("click", () => {
