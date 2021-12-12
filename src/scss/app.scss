@@ -26,6 +26,8 @@ html {
   flex-flow: column;
 }
 
-.active {
-  transform: scale(2, 2);
+.image{
+  .active {
+    transform: scale(2, 2);
+  }
 }
