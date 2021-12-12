@@ -210,9 +210,4 @@ html {
       -ms-flex-flow: column;
           flex-flow: column;
 }
-
-.image .active {
-  -webkit-transform: scale(2, 2);
-          transform: scale(2, 2);
-}
 /*# sourceMappingURL=app.css.map */
