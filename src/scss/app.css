@@ -211,7 +211,7 @@ html {
           flex-flow: column;
 }
 
-.active {
+.image .active {
   -webkit-transform: scale(2, 2);
           transform: scale(2, 2);
 }
