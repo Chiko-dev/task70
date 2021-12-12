@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
     profileImageHolder: ".image"
   }
 
-  Class Profile {
+  class Profile {
     constructor(holder){
       this.profile = holder.querySelector(selectors.profile);
 
